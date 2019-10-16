@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="_css/estilo.css">
     </head>
     <body>
-        <form action="#">
+        <form action="enviar.php" method="post">
             <h2>CONTATO</h2>
-            <input type="text" name="Nome" placeholder="Nome">
-            <input type="text" name="email" placeholder="E-mail">
-            <input type="text" name="feon" placeholder="Telefône">
-            <textarea name="msg" placeholder="Escreva aqui sua mensagem"></textarea>
-            <input type="button" value="Enviar" id="botão">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <input type="text" name="email" placeholder="E-mail" required>
+            <input type="text" name="fone" placeholder="Telefône" required>
+            <textarea name="mensagem" placeholder="Escreva aqui sua mensagem" required></textarea>
+            <input type="submit" value="Enviar" id="botao">
         </form>
     </body>
 </html>
